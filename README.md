@@ -8,7 +8,7 @@
 
 
 ## GT theme
-The **GT theme contains the most up-to-date Georgia Tech design elements and allows for full page customizations. [The Georgia Tech Theme website](http://theme.gatech.edu/) contains documentation and training videos.
+The **GT theme contains the most up-to-date Georgia Tech design elements and allows for full page customizations. [The Georgia Tech Theme site](http://theme.gatech.edu/) contains documentation and training videos.
 
 ### Configuration
 As an administrative user, navigate to *'Appearance - GT - Settings* (also located from admin/appearance/settings/gt ).
