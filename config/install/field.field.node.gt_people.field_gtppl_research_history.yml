@@ -1,0 +1,24 @@
+uuid: a43d6a8b-cc0b-495e-9e34-a8ca77e97fe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gtppl_research_history
+    - node.type.gt_people
+  module:
+    - text
+id: node.gt_people.field_gtppl_research_history
+field_name: field_gtppl_research_history
+entity_type: node
+bundle: gt_people
+label: 'Research History'
+description: '1024 char limit; HTML  description of research history, exhaustive history on personal site'
+required: false
+translatable: false
+default_value:
+  -
+    value: ' '
+    format: restricted_html
+default_value_callback: ''
+settings: {  }
+field_type: text

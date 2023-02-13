@@ -1,0 +1,6 @@
+gt_people.settings_form:
+  title: 'GT People'
+  description: 'Configure GT People.'
+  parent: system.admin_config_system
+  route_name: gt_people.settings_form
+  weight: 10

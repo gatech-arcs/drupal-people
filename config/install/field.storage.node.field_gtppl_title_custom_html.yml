@@ -1,0 +1,20 @@
+uuid: 153f8d27-505e-40d4-9360-4bf10e874762
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gtppl_title_custom_html
+field_name: field_gtppl_title_custom_html
+entity_type: node
+type: text
+settings:
+  max_length: 512
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

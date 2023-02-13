@@ -1,0 +1,20 @@
+{
+    "name": "gtsciences/gt_people",
+    "description": "GT People Profiles",
+    "type": "drupal-custom-module",
+    "license": "GPL-2.0-or-later",
+    "support": {
+        "issues": "https://github.com/konfuzed/gt_drupal_people/issues",
+        "source": "https://github.com/konfuzed/gt_drupal_people"
+    },
+    "keywords": [
+        "Drupal",
+        "Georgia Tech",
+        "Profiles""
+    ],
+    "require": {
+        "drupal/pathauto": "^1.9",
+        "drupal/twig_tweak": "^3.1"
+    }
+}
+

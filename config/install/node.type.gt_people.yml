@@ -1,0 +1,17 @@
+uuid: 93303c77-4576-4f90-9db9-ff68daefda23
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'GT People'
+type: gt_people
+description: 'Common profile for GT personnel'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

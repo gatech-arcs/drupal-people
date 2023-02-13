@@ -1,0 +1,10 @@
+name: GT People
+type: custom-module
+description: Profiles for people
+package: GT
+core_version_requirement: ^9 || ^10
+dependencies:
+  - media
+  - pathauto
+  - telephone
+  - twig_tweak

@@ -1,0 +1,20 @@
+uuid: 7b552084-43b7-49ba-b4f4-e33d5d39eb92
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gtppl_publications
+field_name: field_gtppl_publications
+entity_type: node
+type: text
+settings:
+  max_length: 1024
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

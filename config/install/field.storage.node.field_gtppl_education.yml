@@ -1,0 +1,20 @@
+uuid: 29f97e92-88d9-49b7-aeb5-e223ec64dfeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_gtppl_education
+field_name: field_gtppl_education
+entity_type: node
+type: text
+settings:
+  max_length: 512
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+gt_people.example:
+  path: '/gt-people/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\gt_people\Controller\GtPeopleController::build'
+  requirements:
+    _permission: 'access content'
+
+gt_people.settings_form:
+  path: '/admin/config/system/gt-people'
+  defaults:
+    _title: 'GT People settings'
+    _form: 'Drupal\gt_people\Form\SettingsForm'
+  requirements:
+    _permission: 'administer gt_people configuration'
