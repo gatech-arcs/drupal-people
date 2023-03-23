@@ -8,7 +8,7 @@ dependencies:
 id: node.field_gtppl_biography
 field_name: field_gtppl_biography
 entity_type: node
-type: text
+type: text_long
 settings:
   max_length: 1024
 module: text
