@@ -1,0 +1,20 @@
+name: GT People
+type: Site
+description: Drupal recipe for GT People content type
+
+install:
+  - address
+  - geocoder
+  - geofield
+  - geofield_map
+  - pathauto
+  - twig_tweak
+
+config:
+  import:
+    address: '*'
+    geocoder: '*'
+    geofield: '*'
+    geofield_map: '*'
+    pathauto: '*'
+    twig_tweak: '*'

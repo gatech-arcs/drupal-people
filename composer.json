@@ -1,19 +1,22 @@
 {
-    "name": "gtsciences/people",
+    "name": "gtsciences/gt-people",
     "description": "GT People Profiles",
-    "type": "drupal-custom-module",
+    "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
-    "support": {
-        "issues": "https://github.com/gatech-arcs/drupal-people/issues",
-        "source": "https://github.com/gatech-arcs/drupal-people"
-    },
     "keywords": [
         "Drupal",
         "Georgia Tech",
-        "Profiles"
+        "Profiles",
+        "drupal recipe",
+        "recipe"
     ],
     "require": {
-        "drupal/pathauto": "^1.9",
-        "drupal/twig_tweak": "^3.1"
+        "drupal/address": "^2.0",
+        "drupal/geocoder": "^4.26",
+        "drupal/geofield": "^1.6",
+        "drupal/geofield_map": "11.0",
+
+        "drupal/pathauto": "^1.13",
+        "drupal/twig_tweak": "^3.4"
     }
 }
