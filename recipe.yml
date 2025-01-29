@@ -1,6 +1,6 @@
 name: GT People
 type: Site
-description: Drupal recipe for GT People content type
+description: Drupal recipe for the GT People content type
 
 install:
   - address
@@ -8,6 +8,7 @@ install:
   - geofield
   - geofield_map
   - pathauto
+  - telephone
   - twig_tweak
 
 config:
@@ -17,4 +18,5 @@ config:
     geofield: '*'
     geofield_map: '*'
     pathauto: '*'
+    telephone: '*'
     twig_tweak: '*'
