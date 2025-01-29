@@ -11,7 +11,7 @@
         "recipe"
     ],
     "require": {
-        "core": ">=10.4",
+        "drupal/core": ">=10.4",
 
         "drupal/address": "^2.0",
         "drupal/geocoder": "^4.26",
