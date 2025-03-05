@@ -11,8 +11,56 @@ install:
   - twig_tweak
 
 config:
+  # Treat all field storages strictly, since they influence the database layout.
+  strict:
+    - field.storage.media.field_media_image.yml
+    - field.storage.node.field_gtppl_awards.yml
+    - field.storage.node.field_gtppl_bio_summary.yml
+    - field.storage.node.field_gtppl_biography.yml
+    - field.storage.node.field_gtppl_bldg.yml
+    - field.storage.node.field_gtppl_bldg_room.yml
+    - field.storage.node.field_gtppl_bldg_url_map.yml
+    - field.storage.node.field_gtppl_education.yml
+    - field.storage.node.field_gtppl_email.yml
+    - field.storage.node.field_gtppl_fax.yml
+    - field.storage.node.field_gtppl_gtaccount.yml
+    - field.storage.node.field_gtppl_image.yml
+    - field.storage.node.field_gtppl_image_local.yml
+    - field.storage.node.field_gtppl_image_url.yml
+    - field.storage.node.field_gtppl_phone.yml
+    - field.storage.node.field_gtppl_pronouns.yml
+    - field.storage.node.field_gtppl_publications.yml
+    - field.storage.node.field_gtppl_research_group.yml
+    - field.storage.node.field_gtppl_research_group_url.yml
+    - field.storage.node.field_gtppl_research_history.yml
+    - field.storage.node.field_gtppl_research_keywords.yml
+    - field.storage.node.field_gtppl_research_summary.yml
+    - field.storage.node.field_gtppl_roles.yml
+    - field.storage.node.field_gtppl_salutation.yml
+    - field.storage.node.field_gtppl_title_custom.yml
+    - field.storage.node.field_gtppl_title_custom_html.yml
+    - field.storage.node.field_gtppl_title_custom_short.yml
+    - field.storage.node.field_gtppl_title_official.yml
+    - field.storage.node.field_gtppl_url_cv_resume.yml
+    - field.storage.node.field_gtppl_url_gscholar.yml
+    - field.storage.node.field_gtppl_url_orcid.yml
+    - field.storage.node.field_gtppl_url_personal.yml
+    - field.storage.node.field_gtppl_url_publons.yml
+    - field.storage.node.field_gtppl_url_pubmed.yml
+    - field.storage.node.field_gtppl_url_researcherid.yml
+    - field.storage.node.field_gtppl_url_researchgate.yml
+    - field.storage.node.field_gtppl_url_scopus.yml
   import:
     address: '*'
     geocoder: '*'
     geofield: '*'
     pathauto: '*'
+  actions:
+    user.role.content_editor:
+      grantPermissions:
+        - 'create GT People content'
+        - 'delete GT People revisions'
+        - 'delete any GT People content'
+        - 'edit any GT People content'
+    workflows.workflow.basic_editorial:
+      addNodeTypes: ['gt-people']
