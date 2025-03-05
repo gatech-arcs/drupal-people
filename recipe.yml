@@ -4,15 +4,17 @@ description: Drupal recipe for the GT People content type
 
 install:
   - address
+  - ckeditor5
   - geocoder
   - geofield
   - geofield_map
+  - node
   - pathauto
   - twig_tweak
 
 config:
   # Treat all field storages strictly, since they influence the database layout.
-  strict:
+  strict: false
     - field.storage.media.field_media_image.yml
     - field.storage.node.field_gtppl_awards.yml
     - field.storage.node.field_gtppl_bio_summary.yml
