@@ -56,11 +56,11 @@ config:
     geofield: '*'
     pathauto: '*'
   actions:
-    user.role.content_editor:
+    user.role.gt_people_editor:
       grantPermissions:
         - 'create GT People content'
         - 'delete GT People revisions'
         - 'delete any GT People content'
         - 'edit any GT People content'
     workflows.workflow.basic_editorial:
-      addNodeTypes: ['gt-people']
+      addNodeTypes: ['gt_people']
