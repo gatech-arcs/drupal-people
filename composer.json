@@ -16,7 +16,7 @@
         "drupal/address": "^2.0",
         "drupal/geocoder": "^4.28",
         "drupal/geofield": "^1.64",
-        "drupal/geofield_map": "11.0",
+        "drupal/geofield_map": "^11.0",
 
         "drupal/pathauto": "^1.13",
         "drupal/telephone": "*",
