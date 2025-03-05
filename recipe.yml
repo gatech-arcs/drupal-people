@@ -16,7 +16,5 @@ config:
     address: '*'
     geocoder: '*'
     geofield: '*'
-    geofield_map: '*'
     pathauto: '*'
     telephone: '*'
-    twig_tweak: '*'
