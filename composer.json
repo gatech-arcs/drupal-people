@@ -19,7 +19,6 @@
         "drupal/geofield_map": "^11.0",
 
         "drupal/pathauto": "^1.13",
-        "drupal/telephone": "*",
         "drupal/twig_tweak": "^3.4"
     }
 }
