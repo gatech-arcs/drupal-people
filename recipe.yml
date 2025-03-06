@@ -72,7 +72,12 @@ config:
       - system.action.node_publish_action
       - system.action.node_save_action
       - system.action.node_unpublish_action
+    system:
+      - system.menu.main
   actions:
+    user.role.anonymous:
+      # We assume all published content should be accessible to anonymous users.
+      grantPermission: 'access content'
     user.role.gt_people_editor:
       createIfNotExists:
         label: 'GT People Editor'
