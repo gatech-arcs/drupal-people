@@ -2,6 +2,9 @@ name: GT People
 type: Site
 description: Drupal recipe for the GT People content type
 
+recipes:
+  - image_media_type
+
 install:
   - address
   - ckeditor5
@@ -16,43 +19,45 @@ install:
 config:
   # Treat all field storages strictly, since they influence the database layout.
   strict:
-    - field.storage.media.field_media_image.yml
-    - field.storage.node.field_gtppl_awards.yml
-    - field.storage.node.field_gtppl_bio_summary.yml
-    - field.storage.node.field_gtppl_biography.yml
-    - field.storage.node.field_gtppl_bldg.yml
-    - field.storage.node.field_gtppl_bldg_room.yml
-    - field.storage.node.field_gtppl_bldg_url_map.yml
-    - field.storage.node.field_gtppl_education.yml
-    - field.storage.node.field_gtppl_email.yml
-    - field.storage.node.field_gtppl_fax.yml
-    - field.storage.node.field_gtppl_gtaccount.yml
-    - field.storage.node.field_gtppl_image.yml
-    - field.storage.node.field_gtppl_image_local.yml
-    - field.storage.node.field_gtppl_image_url.yml
-    - field.storage.node.field_gtppl_phone.yml
-    - field.storage.node.field_gtppl_pronouns.yml
-    - field.storage.node.field_gtppl_publications.yml
-    - field.storage.node.field_gtppl_research_group.yml
-    - field.storage.node.field_gtppl_research_group_url.yml
-    - field.storage.node.field_gtppl_research_history.yml
-    - field.storage.node.field_gtppl_research_keywords.yml
-    - field.storage.node.field_gtppl_research_summary.yml
-    - field.storage.node.field_gtppl_roles.yml
-    - field.storage.node.field_gtppl_salutation.yml
-    - field.storage.node.field_gtppl_title_custom.yml
-    - field.storage.node.field_gtppl_title_custom_html.yml
-    - field.storage.node.field_gtppl_title_custom_short.yml
-    - field.storage.node.field_gtppl_title_official.yml
-    - field.storage.node.field_gtppl_url_cv_resume.yml
-    - field.storage.node.field_gtppl_url_gscholar.yml
-    - field.storage.node.field_gtppl_url_orcid.yml
-    - field.storage.node.field_gtppl_url_personal.yml
-    - field.storage.node.field_gtppl_url_publons.yml
-    - field.storage.node.field_gtppl_url_pubmed.yml
-    - field.storage.node.field_gtppl_url_researcherid.yml
-    - field.storage.node.field_gtppl_url_researchgate.yml
-    - field.storage.node.field_gtppl_url_scopus.yml
+    - field.storage.media.field_media_image
+    - field.storage.node.field_gtppl_awards
+    - field.storage.node.field_gtppl_bio_summary
+    - field.storage.node.field_gtppl_biography
+    - field.storage.node.field_gtppl_bldg
+    - field.storage.node.field_gtppl_bldg_room
+    - field.storage.node.field_gtppl_bldg_url_map
+    - field.storage.node.field_gtppl_education
+    - field.storage.node.field_gtppl_email
+    - field.storage.node.field_gtppl_fax
+    - field.storage.node.field_gtppl_gtaccount
+    - field.storage.node.field_gtppl_image
+    - field.storage.node.field_gtppl_image_local
+    - field.storage.node.field_gtppl_image_url
+    - field.storage.node.field_gtppl_img_headshot
+    - field.storage.node.field_gtppl_img_portrait
+    - field.storage.node.field_gtppl_phone
+    - field.storage.node.field_gtppl_pronouns
+    - field.storage.node.field_gtppl_publications
+    - field.storage.node.field_gtppl_research_group
+    - field.storage.node.field_gtppl_research_group_url
+    - field.storage.node.field_gtppl_research_history
+    - field.storage.node.field_gtppl_research_keywords
+    - field.storage.node.field_gtppl_research_summary
+    - field.storage.node.field_gtppl_roles
+    - field.storage.node.field_gtppl_salutation
+    - field.storage.node.field_gtppl_title_custom
+    - field.storage.node.field_gtppl_title_custom_html
+    - field.storage.node.field_gtppl_title_custom_short
+    - field.storage.node.field_gtppl_title_official
+    - field.storage.node.field_gtppl_url_cv_resume
+    - field.storage.node.field_gtppl_url_gscholar
+    - field.storage.node.field_gtppl_url_orcid
+    - field.storage.node.field_gtppl_url_personal
+    - field.storage.node.field_gtppl_url_publons
+    - field.storage.node.field_gtppl_url_pubmed
+    - field.storage.node.field_gtppl_url_researcherid
+    - field.storage.node.field_gtppl_url_researchgate
+    - field.storage.node.field_gtppl_url_scopus
   import:
     address: '*'
     geocoder: '*'
@@ -69,7 +74,7 @@ config:
   actions:
     user.role.gt_people_editor:
       createIfNotExists:
-        label: GT People Editor'
+        label: 'GT People Editor'
       grantPermissions:
         - 'create GT People content'
         - 'delete GT People revisions'
