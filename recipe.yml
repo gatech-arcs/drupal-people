@@ -3,6 +3,7 @@ type: Site
 description: Drupal recipe for the GT People content type
 
 recipes:
+  - core/recipes/basic_html_format_editor
   - core/recipes/image_media_type
 
 install:
