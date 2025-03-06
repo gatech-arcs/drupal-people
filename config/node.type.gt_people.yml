@@ -10,7 +10,7 @@ third_party_settings:
 name: 'GT People'
 type: gt_people
 description: 'Common profile for GT personnel'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

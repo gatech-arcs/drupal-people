@@ -14,10 +14,9 @@ label: Awards
 description: '512 char limit'
 required: false
 translatable: false
-default_value:
-  -
-    value: ' '
-    format: basic_html
+default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

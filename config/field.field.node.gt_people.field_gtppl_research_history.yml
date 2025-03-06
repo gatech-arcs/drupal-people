@@ -14,10 +14,9 @@ label: 'Research History'
 description: '1024 char limit; HTML  description of research history, exhaustive history on personal site'
 required: false
 translatable: false
-default_value:
-  -
-    value: ' '
-    format: basic_html
+default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

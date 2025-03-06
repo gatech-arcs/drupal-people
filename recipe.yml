@@ -15,6 +15,7 @@ install:
   - image
   - node
   - pathauto
+  - telephone
   - twig_tweak
 
 config:

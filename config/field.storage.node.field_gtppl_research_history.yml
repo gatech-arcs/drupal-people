@@ -7,7 +7,7 @@ dependencies:
 id: node.field_gtppl_research_history
 field_name: field_gtppl_research_history
 entity_type: node
-type: text
+type: text_long
 settings:
   max_length: 1024
 module: text

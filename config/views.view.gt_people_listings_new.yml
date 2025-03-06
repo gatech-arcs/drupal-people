@@ -5,7 +5,7 @@ dependencies:
     - field.storage.node.field_gtppl_bldg_name_short
     - field.storage.node.field_gtppl_bldg_room
     - field.storage.node.field_gtppl_email
-    - field.storage.node.field_gtppl_image
+    - field.storage.node.field_gtppl_img_headshot
     - field.storage.node.field_gtppl_name_first
     - field.storage.node.field_gtppl_name_last
     - field.storage.node.field_gtppl_phone
@@ -616,7 +616,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"gtppl-directory-person\">\r\n  <div class=\"gtppl-wrapper-img\">\r\n    {{ field_gtppl_image }}\r\n  </div>\r\n  <div class=\"gtppl-wrapper-content\">\r\n    {{ field_gtppl_name_first }} {{ field_gtppl_name_last }}\r\n    {{ field_gtppl_title_custom }}\r\n    {{ field_gtppl_email }}\r\n    {{ field_gtppl_bldg_name_short }} {{ field_gtppl_bldg_room }}\r\n    {{ field_gtppl_phone }}\r\n  </div>\r\n</div>"
+            text: "<div class=\"gtppl-directory-person\">\r\n  <div class=\"gtppl-wrapper-img\">\r\n    {{ field_gtppl_img_headshot }}\r\n  </div>\r\n  <div class=\"gtppl-wrapper-content\">\r\n    {{ field_gtppl_name_first }} {{ field_gtppl_name_last }}\r\n    {{ field_gtppl_title_custom }}\r\n    {{ field_gtppl_email }}\r\n    {{ field_gtppl_bldg_name_short }} {{ field_gtppl_bldg_room }}\r\n    {{ field_gtppl_phone }}\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -859,7 +859,7 @@ display:
         - 'config:field.storage.node.field_gtppl_bldg_name_short'
         - 'config:field.storage.node.field_gtppl_bldg_room'
         - 'config:field.storage.node.field_gtppl_email'
-        - 'config:field.storage.node.field_gtppl_image'
+        - 'config:field.storage.node.field_gtppl_img_headshot'
         - 'config:field.storage.node.field_gtppl_name_first'
         - 'config:field.storage.node.field_gtppl_name_last'
         - 'config:field.storage.node.field_gtppl_phone'
@@ -896,7 +896,7 @@ display:
         - 'config:field.storage.node.field_gtppl_bldg_name_short'
         - 'config:field.storage.node.field_gtppl_bldg_room'
         - 'config:field.storage.node.field_gtppl_email'
-        - 'config:field.storage.node.field_gtppl_image'
+        - 'config:field.storage.node.field_gtppl_img_headshot'
         - 'config:field.storage.node.field_gtppl_name_first'
         - 'config:field.storage.node.field_gtppl_name_last'
         - 'config:field.storage.node.field_gtppl_phone'
