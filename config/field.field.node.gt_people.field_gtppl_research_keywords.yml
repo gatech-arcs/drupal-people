@@ -9,7 +9,7 @@ field_name: field_gtppl_research_keywords
 entity_type: node
 bundle: gt_people
 label: 'Research Keywords'
-description: '120 char limit list of comma separated, pertinent research terms'
+description: '255 char limit list of comma separated, pertinent research terms'
 required: false
 translatable: false
 default_value: {  }
