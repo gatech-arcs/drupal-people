@@ -1,4 +1,3 @@
-uuid: e5fe9bfc-3298-44e3-8858-d48ab28b7a34
 langcode: en
 status: true
 dependencies:
@@ -9,6 +8,7 @@ dependencies:
     - field.field.paragraph.degree.field_institution
     - field.field.paragraph.degree.field_location
     - field.field.paragraph.degree.field_year
+    - field.field.paragraph.degree.field_with_honors
     - paragraphs.paragraphs_type.degree
 id: paragraph.degree.default
 targetEntityType: paragraph
@@ -65,16 +65,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_with_honors:    # <-- ADD THIS ENTIRE BLOCK
+  field_with_honors:
     type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
-    third_party_settings: {}
+    third_party_settings: {  }
     weight: 6
     region: content
-  field_honors:
-    type: string
 hidden: {  }
