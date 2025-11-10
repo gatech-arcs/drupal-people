@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.degree.field_institution
     - field.field.paragraph.degree.field_location
     - field.field.paragraph.degree.field_year
+    - field.field.paragraph.degree.field_with_honors
     - paragraphs.paragraphs_type.degree
 id: paragraph.degree.default
 targetEntityType: paragraph
@@ -53,13 +54,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-    field_with_honors:    # <-- ADD THIS ENTIRE BLOCK
+  field_with_honors:
     type: boolean_checkbox
     weight: 5
     region: content
     settings:
       display_label: true
-    third_party_settings: {}
+    third_party_settings: {  }
 hidden:
   created: true
   status: true
