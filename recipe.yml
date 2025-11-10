@@ -7,7 +7,6 @@ recipes:
   - core/recipes/image_media_type
 
 install:
-  # Modules from GT People
   - address
   - ckeditor5
   - geocoder
@@ -24,7 +23,6 @@ install:
   - entity_reference_revisions
 
 config:
-  # Treat all field storages strictly, since they influence the database layout.
   strict:
     # Storages from GT People
     - field.storage.media.field_media_image
@@ -66,7 +64,8 @@ config:
     - field.storage.node.field_gtppl_url_researcherid
     - field.storage.node.field_gtppl_url_researchgate
     - field.storage.node.field_gtppl_url_scopus
-    # Storages from Degree Component
+    - field.storage.node.field_gtppl_degrees
+
     - field.storage.paragraph.field_degree
     - field.storage.paragraph.field_honorary
     - field.storage.paragraph.field_honors
@@ -92,7 +91,6 @@ config:
       
   actions:
     user.role.anonymous:
-      # We assume all published content should be accessible to anonymous users.
       grantPermission: 'access content'
     user.role.gt_people_editor:
       createIfNotExists:
