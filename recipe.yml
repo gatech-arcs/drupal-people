@@ -1,13 +1,13 @@
-name: GT People
+name: GT People with Degree Component
 type: 'Content type'
-description: Drupal recipe for the GT People content type
+description: Drupal recipe for the GT People content type, including a 'Degree' Paragraph component.
 
 recipes:
   - core/recipes/basic_html_format_editor
   - core/recipes/image_media_type
-  - degree_component # 1. ADDED THIS RECIPE
 
 install:
+  # Modules from GT People
   - address
   - ckeditor5
   - geocoder
@@ -18,12 +18,15 @@ install:
   - pathauto
   - telephone
   - twig_tweak
-  - entity_reference_revisions # 2. ADDED
-  - paragraphs # 2. ADDED
+  # Modules from Degree Component
+  - paragraphs
+  - inline_entity_form
+  - entity_reference_revisions
 
 config:
   # Treat all field storages strictly, since they influence the database layout.
   strict:
+    # Storages from GT People
     - field.storage.media.field_media_image
     - field.storage.node.field_gtppl_awards
     - field.storage.node.field_gtppl_bio_summary
@@ -31,8 +34,6 @@ config:
     - field.storage.node.field_gtppl_bldg
     - field.storage.node.field_gtppl_bldg_room
     - field.storage.node.field_gtppl_bldg_url_map
-    - field.storage.node.field_gtppl_degrees # 3. ADDED
-    - field.storage.node.field_gtppl_display_contact_info # 3. ADDED
     - field.storage.node.field_gtppl_education
     - field.storage.node.field_gtppl_email
     - field.storage.node.field_gtppl_fax
@@ -65,6 +66,14 @@ config:
     - field.storage.node.field_gtppl_url_researcherid
     - field.storage.node.field_gtppl_url_researchgate
     - field.storage.node.field_gtppl_url_scopus
+    # Storages from Degree Component
+    - field.storage.paragraph.field_degree
+    - field.storage.paragraph.field_honorary
+    - field.storage.paragraph.field_honors
+    - field.storage.paragraph.field_institution
+    - field.storage.paragraph.field_location
+    - field.storage.paragraph.field_year
+
   import:
     address: '*'
     geocoder: '*'
@@ -80,6 +89,7 @@ config:
       - system.action.node_unpublish_action
     system:
       - system.menu.main
+      
   actions:
     user.role.anonymous:
       # We assume all published content should be accessible to anonymous users.
