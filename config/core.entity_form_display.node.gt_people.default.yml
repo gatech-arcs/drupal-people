@@ -9,8 +9,9 @@ dependencies:
     - field.field.node.gt_people.field_gtppl_bldg_room
     - field.field.node.gt_people.field_gtppl_bldg_url_map
     - field.field.node.gt_people.field_gtppl_degrees
-    # --- THIS DEPENDENCY WAS ADDED ---
     - field.field.node.gt_people.field_gtppl_display_contact_info
+    # --- THIS DEPENDENCY WAS ADDED ---
+    - field.field.node.gt_people.field_gtppl_instructional_faculty
     - field.field.node.gt_people.field_gtppl_education
     - field.field.node.gt_people.field_gtppl_email
     - field.field.node.gt_people.field_gtppl_fax
@@ -90,13 +91,13 @@ content:
     third_party_settings: {  }
   field_gtppl_bldg:
     type: options_select
-    weight: 161
+    weight: 162 # Was 161
     region: content
     settings: {  }
     third_party_settings: {  }
   field_gtppl_bldg_room:
     type: string_textfield
-    weight: 162
+    weight: 163 # Was 162
     region: content
     settings:
       size: 60
@@ -104,7 +105,7 @@ content:
     third_party_settings: {  }
   field_gtppl_bldg_url_map:
     type: string_textfield
-    weight: 160
+    weight: 161 # Was 160
     region: content
     settings:
       size: 60
@@ -124,20 +125,27 @@ content:
       default_paragraph_type: degree
     third_party_settings: {  }
 
-  # --- THIS FIELD WAS MOVED AND WEIGHT CHANGED ---
   field_gtppl_education:
     type: text_textfield
-    weight: 127 # Was 125
+    weight: 127
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
 
-  # --- THIS BLOCK WAS ADDED ---
   field_gtppl_display_contact_info:
     type: boolean_checkbox
     weight: 128
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  
+  # --- THIS BLOCK WAS ADDED ---
+  field_gtppl_instructional_faculty:
+    type: boolean_checkbox
+    weight: 129
     region: content
     settings:
       display_label: true
@@ -146,7 +154,7 @@ content:
   
   field_gtppl_email:
     type: email_default
-    weight: 129 # Was 127
+    weight: 130 # Was 129
     region: content
     settings:
       placeholder: ''
@@ -154,14 +162,14 @@ content:
     third_party_settings: {  }
   field_gtppl_fax:
     type: telephone_default
-    weight: 130 # Was 128
+    weight: 131 # Was 130
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_gtppl_gtaccount:
     type: string_textfield
-    weight: 131 # Was 129
+    weight: 132 # Was 131
     region: content
     settings:
       size: 60
@@ -169,7 +177,7 @@ content:
     third_party_settings: {  }
   field_gtppl_image:
     type: image_image
-    weight: 164
+    weight: 165 # Was 164
     region: content
     settings:
       progress_indicator: throbber
@@ -177,14 +185,14 @@ content:
     third_party_settings: {  }
   field_gtppl_image_local:
     type: media_library_widget
-    weight: 165
+    weight: 166 # Was 165
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_gtppl_image_url:
     type: string_textfield
-    weight: 166
+    weight: 167 # Was 166
     region: content
     settings:
       size: 60
@@ -192,20 +200,20 @@ content:
     third_party_settings: {  }
   field_gtppl_phone:
     type: telephone_default
-    weight: 133 # Was 131
+    weight: 134 # Was 133
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   field_gtppl_pronouns:
     type: options_select
-    weight: 138 # Was 136
+    weight: 139 # Was 138
     region: content
     settings: {  }
     third_party_settings: {  }
   field_gtppl_publications:
     type: text_textfield
-    weight: 153 # Was 151
+    weight: 154 # Was 153
     region: content
     settings:
       size: 60
@@ -213,7 +221,7 @@ content:
     third_party_settings: {  }
   field_gtppl_research_group:
     type: string_textfield
-    weight: 154 # Was 152
+    weight: 155 # Was 154
     region: content
     settings:
       size: 60
@@ -221,7 +229,7 @@ content:
     third_party_settings: {  }
   field_gtppl_research_group_url:
     type: string_textfield
-    weight: 155 # Was 153
+    weight: 156 # Was 155
     region: content
     settings:
       size: 60
@@ -229,7 +237,7 @@ content:
     third_party_settings: {  }
   field_gtppl_research_history:
     type: text_textfield
-    weight: 156 # Was 154
+    weight: 157 # Was 156
     region: content
     settings:
       size: 60
@@ -237,7 +245,7 @@ content:
     third_party_settings: {  }
   field_gtppl_research_keywords:
     type: string_textfield
-    weight: 157 # Was 155
+    weight: 158 # Was 157
     region: content
     settings:
       size: 60
@@ -245,7 +253,7 @@ content:
     third_party_settings: {  }
   field_gtppl_research_summary:
     type: string_textfield
-    weight: 158 # Was 156
+    weight: 159 # Was 158
     region: content
     settings:
       size: 60
@@ -253,19 +261,19 @@ content:
     third_party_settings: {  }
   field_gtppl_roles:
     type: options_select
-    weight: 163
+    weight: 164 # Was 163
     region: content
     settings: {  }
     third_party_settings: {  }
   field_gtppl_salutation:
     type: options_select
-    weight: 159 # Was 157
+    weight: 160 # Was 159
     region: content
     settings: {  }
     third_party_settings: {  }
   field_gtppl_title_custom:
     type: string_textfield
-    weight: 134 # Was 132
+    weight: 135 # Was 134
     region: content
     settings:
       size: 60
@@ -273,7 +281,7 @@ content:
     third_party_settings: {  }
   field_gtppl_title_custom_html:
     type: text_textfield
-    weight: 135 # Was 133
+    weight: 136 # Was 135
     region: content
     settings:
       size: 60
@@ -281,7 +289,7 @@ content:
     third_party_settings: {  }
   field_gtppl_title_custom_short:
     type: string_textfield
-    weight: 137 # Was 135
+    weight: 138 # Was 137
     region: content
     settings:
       size: 60
@@ -289,7 +297,7 @@ content:
     third_party_settings: {  }
   field_gtppl_title_official:
     type: string_textfield
-    weight: 136 # Was 134
+    weight: 137 # Was 136
     region: content
     settings:
       size: 60
@@ -297,7 +305,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_cv_resume:
     type: string_textfield
-    weight: 160 # Was 158
+    weight: 161 # Was 160
     region: content
     settings:
       size: 60
@@ -305,7 +313,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_gscholar:
     type: string_textfield
-    weight: 146 # Was 144
+    weight: 147 # Was 146
     region: content
     settings:
       size: 60
@@ -313,7 +321,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_orcid:
     type: string_textfield
-    weight: 147 # Was 145
+    weight: 148 # Was 147
     region: content
     settings:
       size: 60
@@ -321,7 +329,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_personal:
     type: string_textfield
-    weight: 161 # Was 159
+    weight: 162 # Was 161
     region: content
     settings:
       size: 60
@@ -329,7 +337,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_publons:
     type: string_textfield
-    weight: 148 # Was 146
+    weight: 149 # Was 148
     region: content
     settings:
       size: 60
@@ -337,7 +345,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_pubmed:
     type: string_textfield
-    weight: 149 # Was 147
+    weight: 150 # Was 149
     region: content
     settings:
       size: 60
@@ -345,7 +353,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_researcherid:
     type: string_textfield
-    weight: 150 # Was 148
+    weight: 151 # Was 150
     region: content
     settings:
       size: 60
@@ -353,7 +361,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_researchgate:
     type: string_textfield
-    weight: 151 # Was 149
+    weight: 152 # Was 151
     region: content
     settings:
       size: 60
@@ -361,7 +369,7 @@ content:
     third_party_settings: {  }
   field_gtppl_url_scopus:
     type: string_textfield
-    weight: 152 # Was 150
+    weight: 153 # Was 152
     region: content
     settings:
       size: 60
@@ -369,7 +377,7 @@ content:
     third_party_settings: {  }
   field_testing_formatted:
     type: text_textfield
-    weight: 167
+    weight: 168 # Was 167
     region: content
     settings:
       size: 60
@@ -377,7 +385,7 @@ content:
     third_party_settings: {  }
   field_testing_formatted_long:
     type: text_textarea
-    weight: 168
+    weight: 169 # Was 168
     region: content
     settings:
       rows: 5

@@ -41,6 +41,7 @@ config:
     - field.storage.node.field_gtppl_image_url
     - field.storage.node.field_gtppl_img_headshot
     - field.storage.node.field_gtppl_img_portrait
+    - field.storage.node.field_gtppl_instructional_faculty
     - field.storage.node.field_gtppl_phone
     - field.storage.node.field_gtppl_pronouns
     - field.storage.node.field_gtppl_publications
