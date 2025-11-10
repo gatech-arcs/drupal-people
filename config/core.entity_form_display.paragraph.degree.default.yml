@@ -53,6 +53,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+    field_with_honors:    # <-- ADD THIS ENTIRE BLOCK
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
 hidden:
   created: true
   status: true

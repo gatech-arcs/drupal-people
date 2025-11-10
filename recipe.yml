@@ -73,6 +73,7 @@ config:
     - field.storage.paragraph.field_institution
     - field.storage.paragraph.field_location
     - field.storage.paragraph.field_year
+    - field.storage.paragraph.field_with_honors
 
   import:
     address: '*'
