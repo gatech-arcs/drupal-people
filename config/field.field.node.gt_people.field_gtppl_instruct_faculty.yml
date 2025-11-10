@@ -2,10 +2,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_gtppl_instructional_faculty
+    - field.storage.node.field_gtppl_instruct_faculty
     - node.type.gt_people
-id: node.gt_people.field_gtppl_instructional_faculty
-field_name: field_gtppl_instructional_faculty
+id: node.gt_people.field_gtppl_instruct_faculty
+field_name: field_gtppl_instruct_faculty
 entity_type: node
 bundle: gt_people
 label: 'Instructional Faculty'
