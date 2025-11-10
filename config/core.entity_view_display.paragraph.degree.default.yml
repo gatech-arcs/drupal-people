@@ -1,0 +1,68 @@
+uuid: e5fe9bfc-3298-44e3-8858-d48ab28b7a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.degree.field_degree
+    - field.field.paragraph.degree.field_honorary
+    - field.field.paragraph.degree.field_honors
+    - field.field.paragraph.degree.field_institution
+    - field.field.paragraph.degree.field_location
+    - field.field.paragraph.degree.field_year
+    - paragraphs.paragraphs_type.degree
+id: paragraph.degree.default
+targetEntityType: paragraph
+bundle: degree
+mode: default
+content:
+  field_degree:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_honorary:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_honors:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_institution:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_year:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
