@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.gt_people.field_gtppl_degrees
     - field.field.node.gt_people.field_gtppl_display_contact_info
     # --- THIS DEPENDENCY WAS ADDED ---
-    - field.field.node.gt_people.field_gtppl_instructional_faculty
+    - field.field.node.gt_people.field_gtppl_instruct_faculty
     - field.field.node.gt_people.field_gtppl_education
     - field.field.node.gt_people.field_gtppl_email
     - field.field.node.gt_people.field_gtppl_fax
@@ -143,7 +143,7 @@ content:
     third_party_settings: {  }
   
   # --- THIS BLOCK WAS ADDED ---
-  field_gtppl_instructional_faculty:
+  field_gtppl_instruct_faculty:
     type: boolean_checkbox
     weight: 129
     region: content
