@@ -8,6 +8,8 @@ dependencies:
     - field.field.node.gt_people.field_gtppl_bldg
     - field.field.node.gt_people.field_gtppl_bldg_room
     - field.field.node.gt_people.field_gtppl_bldg_url_map
+    - field.field.node.gt_people.field_gtppl_degrees
+    - field.field.node.gt_people.field_gtppl_display_contact_info
     - field.field.node.gt_people.field_gtppl_education
     - field.field.node.gt_people.field_gtppl_email
     - field.field.node.gt_people.field_gtppl_fax
@@ -42,6 +44,7 @@ dependencies:
     - field.field.node.gt_people.field_testing_formatted_long
     - node.type.gt_people
   module:
+    - entity_reference_revisions
     - image
     - options
     - text
@@ -73,28 +76,14 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
-  field_gtppl_bldg:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 141
-    region: content
-  field_gtppl_bldg_room:
-    type: string
+  field_gtppl_degrees:
+    type: entity_reference_revisions_entity_view
     label: above
     settings:
-      link_to_entity: false
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 142
-    region: content
-  field_gtppl_bldg_url_map:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 140
+    weight: 104
     region: content
   field_gtppl_education:
     type: text_default
@@ -347,4 +336,28 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+  field_gtppl_bldg:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 141
+    region: content
+  field_gtppl_bldg_room:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 142
+    region: content
+  field_gtppl_bldg_url_map:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 140
+    region: content
+hidden:
+  field_gtppl_display_contact_info: true
