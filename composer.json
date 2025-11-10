@@ -1,6 +1,6 @@
 {
-    "name": "gtsciences/gt_people_combined",
-    "description": "GT People Profiles with Degree Paragraph Component",
+    "name": "gtsciences/gt_people",
+    "description": "GT People Profiles",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "keywords": [
