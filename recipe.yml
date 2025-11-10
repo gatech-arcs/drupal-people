@@ -5,6 +5,7 @@ description: Drupal recipe for the GT People content type
 recipes:
   - core/recipes/basic_html_format_editor
   - core/recipes/image_media_type
+  - degree_component # 1. ADDED THIS RECIPE
 
 install:
   - address
@@ -17,6 +18,8 @@ install:
   - pathauto
   - telephone
   - twig_tweak
+  - entity_reference_revisions # 2. ADDED
+  - paragraphs # 2. ADDED
 
 config:
   # Treat all field storages strictly, since they influence the database layout.
@@ -28,6 +31,8 @@ config:
     - field.storage.node.field_gtppl_bldg
     - field.storage.node.field_gtppl_bldg_room
     - field.storage.node.field_gtppl_bldg_url_map
+    - field.storage.node.field_gtppl_degrees # 3. ADDED
+    - field.storage.node.field_gtppl_display_contact_info # 3. ADDED
     - field.storage.node.field_gtppl_education
     - field.storage.node.field_gtppl_email
     - field.storage.node.field_gtppl_fax
