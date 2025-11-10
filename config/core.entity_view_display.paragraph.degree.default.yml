@@ -65,7 +65,7 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-    field_with_honors:    # <-- ADD THIS ENTIRE BLOCK
+  field_with_honors:    # <-- ADD THIS ENTIRE BLOCK
     type: boolean
     label: above
     settings:
