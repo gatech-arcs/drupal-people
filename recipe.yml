@@ -50,7 +50,7 @@ config:
     - field.storage.node.field_gtppl_instruct_faculty
     - field.storage.node.field_gtppl_name_display_html # NEW
     - field.storage.node.field_gtppl_name_display_plain # NEW
-    Warning: `field_gtppl_name_first` configuration not found in original recipe or exports.
+    - field.storage.node.field_gtppl_name_first # NEW
     - field.storage.node.field_gtppl_name_last # NEW
     - field.storage.node.field_gtppl_phone
     - field.storage.node.field_gtppl_pronouns
