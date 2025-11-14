@@ -1,11 +1,8 @@
-uuid: d6e10350-aad0-43f9-b481-ee3094ebfbe0
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: Oz9yM--LGoHK0tmokbLgHtW6H7AIaXgEgTF58y_KeHE
 id: node.field_gtppl_url_gscholar
 field_name: field_gtppl_url_gscholar
 entity_type: node

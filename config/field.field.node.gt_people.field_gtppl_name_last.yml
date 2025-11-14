@@ -1,12 +1,9 @@
-uuid: b4ebeb46-5b95-4396-a3c7-54aad7d5d633
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_name_last
     - node.type.gt_people
-_core:
-  default_config_hash: 36DBAmMrVYdh4sPH1yVd41bajFrDyEjX6fhQzOAv8og
 id: node.gt_people.field_gtppl_name_last
 field_name: field_gtppl_name_last
 entity_type: node

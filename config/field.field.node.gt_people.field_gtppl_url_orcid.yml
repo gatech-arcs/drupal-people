@@ -1,12 +1,9 @@
-uuid: 34a1452f-5e61-4c16-9b43-39cfa1aa1862
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_orcid
     - node.type.gt_people
-_core:
-  default_config_hash: aMNeedOILn7_xbrNd13_vCzq81Zw5gu4GdH2P62-SGs
 id: node.gt_people.field_gtppl_url_orcid
 field_name: field_gtppl_url_orcid
 entity_type: node

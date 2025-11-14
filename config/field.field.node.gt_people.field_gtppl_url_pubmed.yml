@@ -1,12 +1,9 @@
-uuid: 8e723bb9-31fb-4e5c-800b-a0c5f684f8b7
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_pubmed
     - node.type.gt_people
-_core:
-  default_config_hash: bDmPNM5nFUApT9zo0xbaP3PC0x0T5jv1LR6PfhpeMCI
 id: node.gt_people.field_gtppl_url_pubmed
 field_name: field_gtppl_url_pubmed
 entity_type: node

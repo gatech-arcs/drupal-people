@@ -1,12 +1,9 @@
-uuid: 753480f7-9fe8-405f-8bc5-33dc0fce55fd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_title_custom_short
     - node.type.gt_people
-_core:
-  default_config_hash: pAtwRn2jSh5dHUIUFYNkY_bHlwjhBtnF310CMlLkeWk
 id: node.gt_people.field_gtppl_title_custom_short
 field_name: field_gtppl_title_custom_short
 entity_type: node

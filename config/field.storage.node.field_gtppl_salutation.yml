@@ -1,12 +1,9 @@
-uuid: 72a3fe4f-0eb3-4197-88ab-9db503236056
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
-_core:
-  default_config_hash: Oqi6Dx6nB5sc1m1at82skHIK8Ll2n2ryR3XpgrAn_C4
 id: node.field_gtppl_salutation
 field_name: field_gtppl_salutation
 entity_type: node

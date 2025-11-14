@@ -1,11 +1,8 @@
-uuid: 60335d3b-a75f-4ab5-98fe-d4908014b5bf
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-_core:
-  default_config_hash: k8PY6suYQyLECkqYmQi-vBTg1T_eJ701mP48OBPeeZ4
 id: paragraph.field_degree
 field_name: field_degree
 entity_type: paragraph

@@ -1,12 +1,9 @@
-uuid: fce637d2-58aa-4a40-abd5-fb6c15810a5f
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: cfAvukS64maWNBTBydgHiDsh8Q-HxMBHMkABQ2GQrUc
 id: node.field_gtppl_publications
 field_name: field_gtppl_publications
 entity_type: node

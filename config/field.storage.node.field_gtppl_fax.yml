@@ -1,12 +1,9 @@
-uuid: 21ec2f15-38e5-4824-abfa-521383a4d05c
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - telephone
-_core:
-  default_config_hash: DHdpDhLuQwtozU2xF45IqfYw7EeycReVmNh2uxba0Cc
 id: node.field_gtppl_fax
 field_name: field_gtppl_fax
 entity_type: node

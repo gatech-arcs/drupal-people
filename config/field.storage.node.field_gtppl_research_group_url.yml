@@ -1,11 +1,8 @@
-uuid: f9c71e35-5753-40cf-98ec-14a6ac7714af
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: ZZISYxMRDQNdSrwNTFkbZbQ_K6BsZJmmmMXZ5LoLjg8
 id: node.field_gtppl_research_group_url
 field_name: field_gtppl_research_group_url
 entity_type: node

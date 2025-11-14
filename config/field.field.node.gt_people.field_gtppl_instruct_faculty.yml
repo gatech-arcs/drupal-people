@@ -1,12 +1,9 @@
-uuid: 545d60df-5880-458f-b091-6349e4033a9f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_instruct_faculty
     - node.type.gt_people
-_core:
-  default_config_hash: W4U70q8y7_uYBjlK0jp8jEN1LsOJsXlxexqOsKVbenM
 id: node.gt_people.field_gtppl_instruct_faculty
 field_name: field_gtppl_instruct_faculty
 entity_type: node

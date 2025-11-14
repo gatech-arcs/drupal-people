@@ -1,12 +1,9 @@
-uuid: 697a415b-b3fc-454d-81d0-b51f62c72f08
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_bldg_room
     - node.type.gt_people
-_core:
-  default_config_hash: 2_yN9ByWnjWXMD-pNTWssE63Qg1mSDgc6FRgMJ9YpO8
 id: node.gt_people.field_gtppl_bldg_room
 field_name: field_gtppl_bldg_room
 entity_type: node

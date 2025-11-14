@@ -1,12 +1,9 @@
-uuid: 33772745-9dfe-4d1b-b863-e81a5148b711
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_scopus
     - node.type.gt_people
-_core:
-  default_config_hash: UNZYeOGrWfKdnyY5KPL97nBdzNAmiH2wle5hJ30c42o
 id: node.gt_people.field_gtppl_url_scopus
 field_name: field_gtppl_url_scopus
 entity_type: node

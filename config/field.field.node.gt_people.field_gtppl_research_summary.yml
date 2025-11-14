@@ -1,12 +1,9 @@
-uuid: ededeca4-9108-49fb-9895-34ba7be95e8c
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_research_summary
     - node.type.gt_people
-_core:
-  default_config_hash: PCpFGyTaNux5kWYuAH30TPnHvdznedr3UE35tk1dZsY
 id: node.gt_people.field_gtppl_research_summary
 field_name: field_gtppl_research_summary
 entity_type: node

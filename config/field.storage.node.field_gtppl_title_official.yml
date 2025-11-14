@@ -1,11 +1,8 @@
-uuid: dbc2b82a-8528-46f1-aa4e-162518cc9f2d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: if3U1pogO-BfiHDx-nmsF1ZR1nOqdh_JB2ms3SO-NLE
 id: node.field_gtppl_title_official
 field_name: field_gtppl_title_official
 entity_type: node

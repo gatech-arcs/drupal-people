@@ -1,4 +1,3 @@
-uuid: c6c38dc2-e5e8-458c-8b5a-63634d6a2059
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - node.type.gt_people
   module:
     - telephone
-_core:
-  default_config_hash: 7SD7oSsANHrM7ySMKxhOIWYm8ozeDIJy6lMvjXjAAxM
 id: node.gt_people.field_gtppl_fax
 field_name: field_gtppl_fax
 entity_type: node

@@ -1,12 +1,9 @@
-uuid: 728b9bd5-eecb-4280-abc4-089acb26e48b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_gscholar
     - node.type.gt_people
-_core:
-  default_config_hash: wRNcZmF4oVlJ1AjWAEvDd_50jU5I8t0DBX1xYlr8B7o
 id: node.gt_people.field_gtppl_url_gscholar
 field_name: field_gtppl_url_gscholar
 entity_type: node

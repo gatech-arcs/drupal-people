@@ -1,11 +1,8 @@
-uuid: b064d5fb-5b8f-40a7-8b1a-3eac94645c35
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-_core:
-  default_config_hash: NQcBAVK2vGOHV6ncfDaRDlEZPg8jPDO608voi1o8--0
 id: paragraph.field_with_honors
 field_name: field_with_honors
 entity_type: paragraph

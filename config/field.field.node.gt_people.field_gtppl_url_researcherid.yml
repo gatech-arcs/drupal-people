@@ -1,12 +1,9 @@
-uuid: f0cbf6cb-5eae-4d64-985a-0d24d94e78e0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_researcherid
     - node.type.gt_people
-_core:
-  default_config_hash: Md7gcpc9S6ZviT6CxpeGB9xcTBLWwDoc-ptOy4SyTAA
 id: node.gt_people.field_gtppl_url_researcherid
 field_name: field_gtppl_url_researcherid
 entity_type: node

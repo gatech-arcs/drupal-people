@@ -1,11 +1,8 @@
-uuid: bb74c859-d8b7-4812-8e16-ac89aaa73ebf
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: jEtd2L00CyQmO8Amv1WQ9E2q0owfDJShfdGIoUnFxr8
 id: node.field_gtppl_email
 field_name: field_gtppl_email
 entity_type: node

@@ -1,12 +1,9 @@
-uuid: a8024b9f-d326-4347-b96d-755e24e77805
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_year
     - paragraphs.paragraphs_type.degree
-_core:
-  default_config_hash: sggM2Mk7DaAAMTYX34qnsgu_kKYGC5iaKTpRfmUh6mA
 id: paragraph.degree.field_year
 field_name: field_year
 entity_type: paragraph

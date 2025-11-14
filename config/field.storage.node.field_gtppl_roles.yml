@@ -1,12 +1,9 @@
-uuid: 334ee8c7-1cb1-4a9c-aa5b-6ef90c2f2c2e
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
-_core:
-  default_config_hash: EqasmHGLp8zB3VsnaTnuCnuxwvAYpjGW7RKd7orpO7o
 id: node.field_gtppl_roles
 field_name: field_gtppl_roles
 entity_type: node

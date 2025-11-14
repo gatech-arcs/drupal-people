@@ -1,12 +1,9 @@
-uuid: a7c442cb-66ab-4174-a41e-b17696803000
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - telephone
-_core:
-  default_config_hash: HQoqSJUBe73d_KaZJsjchbiAq-dqcVqSbs-KASWTlG0
 id: node.field_gtppl_phone
 field_name: field_gtppl_phone
 entity_type: node
