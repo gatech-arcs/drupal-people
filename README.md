@@ -19,11 +19,26 @@ Incoming...
 ![Dependabot Status](https://flat.badgen.net/github/dependabot/ubuntu/yaru)
 
 # Kickstart Spinup with ddev
+# Configure DDEV for a Drupal 11 project with 'web' as the docroot
 ddev config --project-type=drupal11 --docroot=web
+
+# Start the DDEV environment
 ddev start
+
+# Create a new Drupal project using the gt_kickoff template
 ddev composer create-project gtsciences/gt_kickoff --stability dev
+
+# Add Drush (Drupal's command-line tool) to the project
 ddev composer require drush/drush
+
+# Install the Drupal site with an admin account
 ddev drush site:install --account-name=admin --account-pass=admin -y
+
+# Get a one-time login link and open it in the browser
 ddev launch $(ddev drush uli)
+
+# Require the gt_people module (specific dev branch)
 ddev composer require gtsciences/gt_people:"dev-adding-degree-component"
+
+# Run the gt_people recipe using Drush
 ddev drush recipe ../recipes/gt_people
