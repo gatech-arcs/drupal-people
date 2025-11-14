@@ -1,3 +1,4 @@
+uuid: 9faacad1-8870-438a-88a7-7d019105931f
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.gt_people
   module:
     - options
+_core:
+  default_config_hash: KmIujfb8LJyATfw6qA-izqgPvuFdoF93mCobSzLSXEY
 id: node.gt_people.field_gtppl_bldg
 field_name: field_gtppl_bldg
 entity_type: node

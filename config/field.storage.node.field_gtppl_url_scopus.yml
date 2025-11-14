@@ -1,8 +1,11 @@
+uuid: 1e677f1d-0cfe-42ab-ab43-78d164b85c6a
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: vC_Ebf1HHC3R58fTZPu2zyMWS_jn__V0I4AyI5RasWA
 id: node.field_gtppl_url_scopus
 field_name: field_gtppl_url_scopus
 entity_type: node

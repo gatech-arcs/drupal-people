@@ -1,3 +1,4 @@
+uuid: 402624be-a9b5-444f-a505-33a70f3e5fb0
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: HA18lyyaUzXX-yLQ_ZCni70C-tcny1l4qowGn5XsIwM
 id: node.field_gtppl_degrees
 field_name: field_gtppl_degrees
 entity_type: node

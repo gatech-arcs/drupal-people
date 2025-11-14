@@ -1,9 +1,12 @@
+uuid: bf8195d9-404d-4d7d-adbe-615bb41e462f
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: KlEsxPxHdecmAYch7zZGWLnAFu7kswcUnRlDcgwKJTU
 id: node.field_gtppl_title_custom_html
 field_name: field_gtppl_title_custom_html
 entity_type: node

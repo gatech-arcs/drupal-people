@@ -1,8 +1,11 @@
+uuid: f286c190-e5fb-4ab4-9a9b-a5d5da3bd854
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: pfeQm_oqEf6-9fMJ4vOVkUqENESWPVGeDECGX7uedC4
 id: node.field_gtppl_bldg_room
 field_name: field_gtppl_bldg_room
 entity_type: node

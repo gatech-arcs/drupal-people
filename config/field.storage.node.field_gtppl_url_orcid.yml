@@ -1,8 +1,11 @@
+uuid: da5f00dd-f738-482d-a628-5e70b058ce22
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Bh7wjI05mVdmLQZ0MrJt3yZWzWC0Md2A9W-51viyqAA
 id: node.field_gtppl_url_orcid
 field_name: field_gtppl_url_orcid
 entity_type: node

@@ -1,15 +1,17 @@
+uuid: 3d1116c3-ff6a-4abd-adcf-8c0fbad35b8a
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: zMG3dDVA8lxgA5BaKa1pBCRat8lZ8zD8y-iIQ1zz7fM
 id: node.field_gtppl_biography
 field_name: field_gtppl_biography
 entity_type: node
 type: text_long
-settings:
-  max_length: 1024
+settings: {  }
 module: text
 locked: false
 cardinality: 1

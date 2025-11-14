@@ -1,9 +1,12 @@
+uuid: c3e1e3fb-39f1-451d-a679-49911356f520
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: u-ADadtkkw3Gi7NORch2KPT49dPrVrWZvu5Y1drNJGQ
 id: node.field_gtppl_pronouns
 field_name: field_gtppl_pronouns
 entity_type: node

@@ -1,3 +1,4 @@
+uuid: 0f8aff57-64fe-4dd4-b205-8caae5bbe61e
 langcode: en
 status: true
 dependencies:
@@ -7,9 +8,11 @@ dependencies:
     - field.field.paragraph.degree.field_honors
     - field.field.paragraph.degree.field_institution
     - field.field.paragraph.degree.field_location
-    - field.field.paragraph.degree.field_year
     - field.field.paragraph.degree.field_with_honors
+    - field.field.paragraph.degree.field_year
     - paragraphs.paragraphs_type.degree
+_core:
+  default_config_hash: cmSUZviAEUH3Qf5EgkwdiNMqb3scthR7F8R3qmmtzuU
 id: paragraph.degree.default
 targetEntityType: paragraph
 bundle: degree
@@ -57,14 +60,6 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_year:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_with_honors:
     type: boolean
     label: above
@@ -74,5 +69,13 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_year:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

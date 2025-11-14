@@ -1,15 +1,17 @@
+uuid: 33e00445-736b-41b2-a2c9-3de9e033911d
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: T0J0wtGOb9nRjpC77tiSkqTGpwIcRwDthvJIdLaTzaA
 id: node.field_gtppl_awards
 field_name: field_gtppl_awards
 entity_type: node
 type: text_long
-settings:
-  max_length: 1024
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,8 +1,11 @@
+uuid: edca1a76-3fa1-4bb6-be2c-b9bb2bcb8f50
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 82BgJtUJ56JvGDertIFIYcRoQ_QqGB7lKDlTk8s4Tn0
 id: node.field_gtppl_research_group
 field_name: field_gtppl_research_group
 entity_type: node

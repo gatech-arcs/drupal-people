@@ -1,8 +1,11 @@
+uuid: bc338400-8bea-4173-9a11-f9bf0795cec7
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: LQ67aa_LdHfCbEmYwshymv-LEcPvCe1ebkBJG9YsGoo
 id: node.field_gtppl_url_researchgate
 field_name: field_gtppl_url_researchgate
 entity_type: node

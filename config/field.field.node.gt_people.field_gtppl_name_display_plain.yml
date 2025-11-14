@@ -1,9 +1,12 @@
+uuid: 879e76a6-69b0-49a0-9b45-b3c93c3136f8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_name_display_plain
     - node.type.gt_people
+_core:
+  default_config_hash: 1QdtkK6s_jXvK_fN4NHNHYk_Er3wE4f2DiMwKn1-HBw
 id: node.gt_people.field_gtppl_name_display_plain
 field_name: field_gtppl_name_display_plain
 entity_type: node
@@ -12,9 +15,7 @@ label: 'Name - Display (plain text)'
 description: 'Simplified, plain text display name'
 required: false
 translatable: false
-default_value: {}
+default_value: {  }
 default_value_callback: ''
-settings:
-  allowed_formats:
-    - basic_html
+settings: {  }
 field_type: string

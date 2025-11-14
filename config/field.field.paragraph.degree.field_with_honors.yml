@@ -1,9 +1,12 @@
+uuid: 809336ff-8c9c-44bf-b45b-992cec5e0ad9
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_with_honors
     - paragraphs.paragraphs_type.degree
+_core:
+  default_config_hash: WTPNiFkuYpUCTdCigYnh-ASN7odOkemwsi6d1XEOtKs
 id: paragraph.degree.field_with_honors
 field_name: field_with_honors
 entity_type: paragraph

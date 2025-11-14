@@ -1,9 +1,12 @@
+uuid: da601b1b-48fe-439d-9aa9-7d3c746a258a
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
+_core:
+  default_config_hash: ngpM_DiZ_WRCju4-1KC3vKUnaWp3shWKQQ4LAqE1_GA
 id: node.field_gtppl_img_headshot
 field_name: field_gtppl_img_headshot
 entity_type: node

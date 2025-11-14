@@ -1,15 +1,17 @@
+uuid: 24ccdae0-4739-4c3a-a11f-78aea0a0b854
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: QsimjG_Mp4F-WXonYCINOf0Ts5LquI5_xavmpMqq2QY
 id: node.field_gtppl_research_history
 field_name: field_gtppl_research_history
 entity_type: node
 type: text_long
-settings:
-  max_length: 1024
+settings: {  }
 module: text
 locked: false
 cardinality: 1

@@ -1,3 +1,4 @@
+uuid: d8f4f0e8-ac63-4650-b272-633e7909933e
 langcode: en
 status: true
 dependencies:
@@ -7,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: exVDru5mW8KTUYRet4nx1jK6Q_SDdOhKy2kPtrHkoFs
 name: 'GT People'
 type: gt_people
 description: 'Common profile for GT personnel'

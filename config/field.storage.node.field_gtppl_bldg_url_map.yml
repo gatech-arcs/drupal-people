@@ -1,8 +1,11 @@
+uuid: eb1677a3-201d-4ff0-b8d1-98780db604e0
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: I0qQnlgFQhqqg7s9zfPWygZygyau5VhtR5fZPp52yhM
 id: node.field_gtppl_bldg_url_map
 field_name: field_gtppl_bldg_url_map
 entity_type: node

@@ -1,8 +1,11 @@
+uuid: a50a169c-cdbb-44bf-bcaf-14fbb8030764
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: dxwuqBx-qydDFt4HpV6hNbrDgw02Jj6KoSe5j2rv08w
 id: node.field_gtppl_url_pubmed
 field_name: field_gtppl_url_pubmed
 entity_type: node

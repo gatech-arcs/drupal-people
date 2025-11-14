@@ -1,9 +1,12 @@
+uuid: e5738059-b46d-4d35-a7d9-a96502ef0a15
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: 0_GqioRO7fjmT0tb9YuQzd3Kux9k7F8WBGIU7Y0lizo
 id: node.field_gtppl_bldg
 field_name: field_gtppl_bldg
 entity_type: node
@@ -39,7 +42,7 @@ settings:
       label: 'ACC Network Production Center'
     -
       value: '033'
-      label: 'O''Keefe, Daniel C.'
+      label: "O'Keefe, Daniel C."
     -
       value: '035'
       label: 'Evans, Lettie Pate Whitehead Administration'

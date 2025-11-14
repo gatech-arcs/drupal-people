@@ -1,15 +1,17 @@
+uuid: 9709de97-dc78-492f-aa4a-e0076b364dc7
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: 7obLCLngZrwnBIVzJ-qPtFnRwGWkdRiwZeMZhW_fb2o
 id: node.field_gtppl_education
 field_name: field_gtppl_education
 entity_type: node
 type: text_long
-settings:
-  max_length: 1024
+settings: {  }
 module: text
 locked: false
 cardinality: 1

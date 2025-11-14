@@ -1,3 +1,4 @@
+uuid: 8446ae6e-5fb2-4019-ae1f-9c06a4290540
 langcode: en
 status: true
 dependencies:
@@ -7,12 +8,14 @@ dependencies:
     - paragraphs.paragraphs_type.degree
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: 8XuX_d0DeIxbw1mDSGtO6caG99gBT7LMvcrfq-VNuAc
 id: node.gt_people.field_gtppl_degrees
 field_name: field_gtppl_degrees
 entity_type: node
 bundle: gt_people
 label: Degrees
-description: 'List of academic degrees.'
+description: "List of academic degrees.\r\nThese field are required for Instructional Faculty"
 required: false
 translatable: false
 default_value: {  }
@@ -25,6 +28,6 @@ settings:
     negate: 0
     target_bundles_drag_drop:
       degree:
-        enabled: true
         weight: 2
+        enabled: true
 field_type: entity_reference_revisions

@@ -1,3 +1,4 @@
+uuid: d3c38d47-242b-4bd8-88a7-20d000ea5c19
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_gtppl_img_portrait
     - media.type.gtppl_image
     - node.type.gt_people
+_core:
+  default_config_hash: 2uzKR8MbX4Pn90R8YoIfjGO3OfZaNx7g7XrEbsZFP5s
 id: node.gt_people.field_gtppl_img_portrait
 field_name: field_gtppl_img_portrait
 entity_type: node

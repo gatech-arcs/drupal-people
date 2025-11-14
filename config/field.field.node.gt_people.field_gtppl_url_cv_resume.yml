@@ -1,9 +1,12 @@
+uuid: b8d9300b-efcb-435c-97b6-08bfb2813374
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_url_cv_resume
     - node.type.gt_people
+_core:
+  default_config_hash: XBX1xQ50yHgjO8gSTDxmIesQgOiV33jpXiPBFGD8GtA
 id: node.gt_people.field_gtppl_url_cv_resume
 field_name: field_gtppl_url_cv_resume
 entity_type: node

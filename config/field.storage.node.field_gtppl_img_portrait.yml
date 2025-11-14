@@ -1,9 +1,12 @@
+uuid: dfc7cd02-33e9-4b14-90f3-ebc967b3ef7a
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
+_core:
+  default_config_hash: Tk5VXXTP7ScWaz-I7__DQ1T2CGuhAJbxlYQ2sBkQVco
 id: node.field_gtppl_img_portrait
 field_name: field_gtppl_img_portrait
 entity_type: node

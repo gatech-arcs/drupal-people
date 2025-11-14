@@ -1,8 +1,11 @@
+uuid: 98eab6b6-1a3e-4647-abc8-6ce50f2ef199
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: Jve0p8B8MBC1TGcKqMGR3b9jiHaixw9SJkeTyN4RG2g
 id: node.field_gtppl_name_first
 field_name: field_gtppl_name_first
 entity_type: node
@@ -15,6 +18,6 @@ module: core
 locked: false
 cardinality: 1
 translatable: true
-indexes: {}
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

@@ -1,11 +1,15 @@
+uuid: 308e2a71-404a-46ea-9fc6-7e8b97eff721
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_awards
+    - filter.format.basic_html
     - node.type.gt_people
   module:
     - text
+_core:
+  default_config_hash: z7rlHrbhT-Pdq1XE65jI7wPm9zcFQ8kw4Y1AW15ywb4
 id: node.gt_people.field_gtppl_awards
 field_name: field_gtppl_awards
 entity_type: node
@@ -14,7 +18,7 @@ label: Awards
 description: '512 char limit'
 required: false
 translatable: false
-default_value: {}
+default_value: {  }
 default_value_callback: ''
 settings:
   allowed_formats:

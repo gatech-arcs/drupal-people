@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.paragraph.field_honorary
     - paragraphs.paragraphs_type.degree
+_core:
+  default_config_hash: Ed9S8x0X4Ze7aDz_FJOuDN_pT6ZjlqwPktucNZWIm1o
 id: paragraph.degree.field_honorary
 field_name: field_honorary
 entity_type: paragraph

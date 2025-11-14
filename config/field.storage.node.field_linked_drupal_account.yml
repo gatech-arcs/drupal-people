@@ -1,16 +1,16 @@
-uuid: bb74c859-d8b7-4812-8e16-ac89aaa73ebf
+uuid: bbac3a75-1446-43c2-8a4a-4f5e8ec6c5d8
 langcode: en
 status: true
 dependencies:
   module:
     - node
-_core:
-  default_config_hash: jEtd2L00CyQmO8Amv1WQ9E2q0owfDJShfdGIoUnFxr8
-id: node.field_gtppl_email
-field_name: field_gtppl_email
+    - user
+id: node.field_linked_drupal_account
+field_name: field_linked_drupal_account
 entity_type: node
-type: email
-settings: {  }
+type: entity_reference
+settings:
+  target_type: user
 module: core
 locked: false
 cardinality: 1

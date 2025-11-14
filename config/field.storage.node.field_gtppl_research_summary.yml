@@ -1,8 +1,11 @@
+uuid: 8a75cc27-71fe-4ab2-bf35-a403ef83aaea
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 67kNQdEQh0gRCCO_9UIwvrwqHi9isD_evGDIuGJsnEQ
 id: node.field_gtppl_research_summary
 field_name: field_gtppl_research_summary
 entity_type: node

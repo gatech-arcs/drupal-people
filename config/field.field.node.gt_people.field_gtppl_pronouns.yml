@@ -1,3 +1,4 @@
+uuid: baad2b88-c2b7-4ae1-b9aa-08a8f0967e00
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.gt_people
   module:
     - options
+_core:
+  default_config_hash: HmUdd__-BkmJ-wo0KMiQwXCWAufyBRvvzSJu0BDch3s
 id: node.gt_people.field_gtppl_pronouns
 field_name: field_gtppl_pronouns
 entity_type: node

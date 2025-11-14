@@ -1,3 +1,4 @@
+uuid: e06d9e4d-873a-4f13-a7d7-4575f8a9a14d
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.gt_people
   module:
     - text
+_core:
+  default_config_hash: OLqhysWLc9CQD0nfS9JuSxwBdX2uiw6gj6toiYIYNdc
 id: node.gt_people.field_gtppl_title_custom_html
 field_name: field_gtppl_title_custom_html
 entity_type: node
@@ -19,5 +22,6 @@ default_value:
     value: ' '
     format: basic_html
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats: {  }
 field_type: text

@@ -1,9 +1,12 @@
+uuid: 0461c944-421c-420f-8380-832cd5cccc9a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_title_custom
     - node.type.gt_people
+_core:
+  default_config_hash: Z7Kcyl734gpKsg-CSfduBpJAK9DH9JEuO_HRGxf8nTs
 id: node.gt_people.field_gtppl_title_custom
 field_name: field_gtppl_title_custom
 entity_type: node

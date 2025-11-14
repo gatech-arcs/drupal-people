@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - paragraphs
+_core:
+  default_config_hash: eZ4DRVZYPN-BBKkrqxcX5WP3FlFd7uI7eRA0wY2IGgE
 id: paragraph.field_year
 field_name: field_year
 entity_type: paragraph

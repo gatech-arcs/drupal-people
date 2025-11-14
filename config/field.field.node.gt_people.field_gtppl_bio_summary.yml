@@ -1,9 +1,12 @@
+uuid: 5cd8200d-8b75-4eec-86ba-8b1f26e2d805
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_gtppl_bio_summary
     - node.type.gt_people
+_core:
+  default_config_hash: IsHFDNgHbSdZuV-HPGM1qjFLfAGAv-Y2ZuxDWhQ3tjM
 id: node.gt_people.field_gtppl_bio_summary
 field_name: field_gtppl_bio_summary
 entity_type: node
