@@ -9,29 +9,35 @@ recipes:
 install:
   - address
   - ckeditor5
+  - conditional_fields # New module from your form display
+  - entity_reference_revisions
   - geocoder
   - geofield
   - geofield_map
   - image
+  - inline_entity_form
   - node
+  - paragraphs
+  - path # New module from your form display
   - pathauto
   - telephone
+  - text # New module from your form display
   - twig_tweak
-  # Modules from Degree Component
-  - paragraphs
-  - inline_entity_form
-  - entity_reference_revisions
 
 config:
   strict:
-    # Storages from GT People
+    # Storages from Media
     - field.storage.media.field_media_image
+    
+    # Storages from GT People
     - field.storage.node.field_gtppl_awards
     - field.storage.node.field_gtppl_bio_summary
     - field.storage.node.field_gtppl_biography
     - field.storage.node.field_gtppl_bldg
     - field.storage.node.field_gtppl_bldg_room
     - field.storage.node.field_gtppl_bldg_url_map
+    - field.storage.node.field_gtppl_degrees
+    - field.storage.node.field_gtppl_display_contact_info
     - field.storage.node.field_gtppl_education
     - field.storage.node.field_gtppl_email
     - field.storage.node.field_gtppl_fax
@@ -42,6 +48,10 @@ config:
     - field.storage.node.field_gtppl_img_headshot
     - field.storage.node.field_gtppl_img_portrait
     - field.storage.node.field_gtppl_instruct_faculty
+    - field.storage.node.field_gtppl_name_display_html
+    - field.storage.node.field_gtppl_name_display_plain
+    - field.storage.node.field_gtppl_name_first
+    - field.storage.node.field_gtppl_name_last
     - field.storage.node.field_gtppl_phone
     - field.storage.node.field_gtppl_pronouns
     - field.storage.node.field_gtppl_publications
@@ -65,15 +75,16 @@ config:
     - field.storage.node.field_gtppl_url_researcherid
     - field.storage.node.field_gtppl_url_researchgate
     - field.storage.node.field_gtppl_url_scopus
-    - field.storage.node.field_gtppl_degrees
+    - field.storage.node.field_linked_drupal_account 
 
+    # Storages from Degree Paragraph
     - field.storage.paragraph.field_degree
     - field.storage.paragraph.field_honorary
     - field.storage.paragraph.field_honors
     - field.storage.paragraph.field_institution
     - field.storage.paragraph.field_location
-    - field.storage.paragraph.field_year
     - field.storage.paragraph.field_with_honors
+    - field.storage.paragraph.field_year
 
   import:
     address: '*'
