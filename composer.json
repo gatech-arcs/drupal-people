@@ -22,7 +22,7 @@
 
         "drupal/pathauto": "^1.13",
         "drupal/telephone": "^10",
-        "drupal/twig_tweak": "^3.4"
+        "drupal/twig_tweak": "^3.4",
 
         "drupal/pathauto": "^1.9",
         "drupal/twig_tweak": "^3.1"
