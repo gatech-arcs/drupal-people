@@ -1,0 +1,6 @@
+gt_people:
+  css:
+    theme:
+      css/gt-people.css: {}
+  dependencies:
+    - core/drupalSettings
