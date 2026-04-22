@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.gt_people_html
+  module:
+    - ckeditor5
+format: gt_people_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - undo
+      - redo
+      - bold
+      - italic
+      - specialCharacters
+      - subscript
+      - superscript
+      - code
+      - bulletedList
+      - numberedList
+      - link
+  plugins: {  }
+image_upload: {  }

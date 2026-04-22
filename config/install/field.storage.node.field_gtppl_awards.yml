@@ -1,4 +1,3 @@
-uuid: f5cfde56-fec3-4a83-856f-7f2b89eee9c9
 langcode: en
 status: true
 dependencies:
@@ -8,9 +7,8 @@ dependencies:
 id: node.field_gtppl_awards
 field_name: field_gtppl_awards
 entity_type: node
-type: text
-settings:
-  max_length: 512
+type: text_long
+settings: {  }
 module: text
 locked: false
 cardinality: 1

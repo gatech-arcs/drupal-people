@@ -1,0 +1,235 @@
+{#
+   GT People Full Person Template
+/**
+ * @file
+ *
+ * Default theme implementation for GT People profiles.
+ *
+ * Available variables:
+ * - content: Items for the content of the person.
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.title'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('title') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - view_mode: The profile view mode used.
+ * - profile: The profile object.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('gt_people/gt_people') }}
+
+{%
+  set classes = [
+  'gtppl',
+  view_mode ? 'gt_people--view-mode--' ~ view_mode|clean_class,
+]
+%}
+<div{{ attributes.setAttribute('id', gt_people.id).addClass(classes) }}>
+
+<div class="gtppl-basic-contact">
+
+  <h3>Contact Information</h3>
+
+  <dl class="gtppl-contact-info">
+
+    {% if content.field_gtppl_email|render is not empty %}
+      <dt class="-email">Email</dt>
+      <dd class="-email">
+        <a href="mailto:{{ content.field_gtppl_email.0 }}">{{ content.field_gtppl_email.0 }}</a>
+      </dd>
+    {% endif %}
+
+    {% if content.field_gtppl_url_personal|render is not empty %}
+      <dt class="-urlpersonal">Personal Site</dt>
+      <dd class="-urlpersonal">
+        <a href="mailto:{{ content.field_gtppl_url_personal.0 }}">{{ content.field_gtppl_url_personal.0 }}</a>
+      </dd>
+    {% endif %}
+
+    {% if content.field_gtppl_phone|render is not empty %}
+      <dt class="-phone">Phone</dt>
+      <dd class="-phone">
+        {{ content.field_gtppl_phone.0 }}
+      </dd>
+    {% endif %}
+
+    {% if content.field_gtppl_fax|render is not empty %}
+      <dt class="-fax">Fax</dt>
+      <dd class="-fax">
+        {{ content.field_gtppl_fax.0 }}
+      </dd>
+    {% endif %}
+
+    {% if content.field_gtppl_bldg_name_short|render is not empty %}
+      <dt class="-location">Location</dt>
+      <dd class="-location">
+        {{ content.field_gtppl_bldg_name_short.0 }} {{ content.field_gtppl_bldg_room.0}}
+      </dd>
+    {% endif %}
+
+    {% if content.field_gtppl_research_group|render is not empty %}
+      <dt class="-researchgrp">Research Group</dt>
+      <dd class="-researchgrp">
+        {% if content.field_gtppl_research_group_url|render is not empty %}
+          <a href="{{ content.field_gtppl_research_group_url.0 }}">{{ content.field_gtppl_research_group.0 }}</a>
+        {% else %}
+          {{ content.field_gtppl_research_group.0 }}
+        {% endif %}
+      </dd>
+    {% endif %}
+	
+    {% if content.field_gtppl_pronouns|render is not empty %}
+      <dt class="-pronouns">Pronouns</dt>
+      <dd class="-pronouns">
+        {{ content.field_gtppl_pronouns.0 }}
+      </dd>
+    {% endif %}
+	
+
+    {% if content.field_gtppl_url_gscholar|render is not empty or content.field_gtppl_url_orcid|render is not empty or content.field_gtppl_url_publons|render is not empty or content.field_gtppl_url_pubmed|render is not empty or content.field_gtppl_url_researcherid|render is not empty or content.field_gtppl_url_researchgate|render is not empty or content.field_gtppl_url_scopus|render is not empty %}
+      <dt class="-publinks">Publication Links</dt>
+        {% if content.field_gtppl_url_gscholar|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_gscholar.0 }}">Google Scholar</a>
+        {% endif %}
+        {% if content.field_gtppl_url_orcid|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_orcid.0 }}">OrcID</a>
+          </dd>
+        {% endif %}
+        {% if content.field_gtppl_url_publons|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_publons.0 }}">Publons</a>
+          </dd>
+        {% endif %}
+        {% if content.field_gtppl_url_pubmed|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_pubmed.0 }}">PubMed</a>
+          </dd>
+        {% endif %}
+        {% if content.field_gtppl_url_researcherid|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_researcherid.0 }}">ResearcherID</a>
+          </dd>
+        {% endif %}
+        {% if content.field_gtppl_url_researchgate|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_researchgate.0 }}">ResearchGate</a>
+          </dd>
+        {% endif %}
+        {% if content.field_gtppl_url_scopus|render is not empty %}
+          <dd class="-publinks">
+          <a href="{{ content.field_gtppl_url_scopus.0 }}">Scopus</a>
+          </dd>
+        {% endif %}
+    {% endif %}
+
+    {% if content.field_gtppl_url_cv_resume|render is not empty %}
+      <dt class="-cvresume">CV / Resume</dt>
+      <dd class="-cvresume">
+        <a href="mailto:{{ content.field_gtppl_url_cv_resume.0 }}">{{ content.field_gtppl_url_cv_resume.0 }}</a>
+      </dd>
+    {% endif %}
+
+        {% if content.field_gtppl_url_personal|render is not empty %}
+      <dt class="-email">Email</dt>
+      <dd class="-email">
+        <a href="mailto:{{ content.field_gtppl_url_personal.0 }}">{{ content.field_gtppl_url_personal.0 }}</a>
+      </dd>
+    {% endif %}
+  </dl>
+
+</div>
+
+<div class="gtppl-profile-full">
+
+  <!--div class="gtppl-header"-->
+    <div class="gtppl-header-img">
+{#
+      {% if content.field_gtppl_img_portrait|render is not empty %}
+        {{ content.field_gtppl_img_portrait|image_style('gtppl_portrait') }}
+      {% elseif content.field_gtppl_image|render is not empty %}
+        {{ content.field_gtppl_image|image_style('max_width_480') }}
+      {% elseif content.field_gtppl_image_local|render is not empty %}
+        <img src="{{ content.field_gtppl_image_local.0 }}">
+       {% elseif content.field_gtppl_image_url|render is not empty %}
+
+      {% if content.field_gtppl_image|file_uri is not null %}
+        <img src="{{ content.field_gtppl_image|file_uri|image_style('max_width_480') }}" alt="{{ content.field_gtppl_image.entity.field_media_image.alt }}">
+      {% elseif content.field_gtppl_image_url|render is not empty %}
+#}
+
+      {% if content.field_gtppl_img_portrait|render is not empty %}
+        {{ content.field_gtppl_img_portrait|render }}
+      {% elseif content.field_gtppl_img_headshot|render is not empty %}
+        {{ content.field_gtppl_img_headshot|render }}
+      {% elseif content.field_gtppl_image|render is not empty %}
+        {{ content.field_gtppl_image.0 }}
+      {% elseif content.field_gtppl_image_local|render is not empty %}
+        {{ content.field_gtppl_image_local.0 }}
+	   {% elseif content.field_gtppl_image_url|render is not empty %}
+        <img src="/sites/default/files/{{ content.field_gtppl_image_url.0 }}" alt="">			
+      {% else %}
+        <!-- Default Placeholder Image -->
+        <img src="https://cos.gatech.edu/sites/default/files/styles/leadership_image/public/default_leadershop.jpg" alt="Placeholder Image">
+      {% endif %}
+    </div>
+    <div class="gtppl-header-txt">
+      <h1>
+{#
+      {% if content.field_gtppl_name_display_html|render is not empty %}
+        {{ content.field_gtppl_name_display_html.0 }}
+      {% elseif content.field_gtppl_name_display_plain|render is not empty %}
+#}
+      {% if content.field_gtppl_name_display_plain|render is not empty %}
+        {{ content.field_gtppl_name_display_plain.0 }}
+      {% else %}
+        {{ content.field_gtppl_name_first.0 }} {{ content.field_gtppl_name_last.0 }}
+      {% endif %}
+      </h1>
+      <p>
+      {% if content.field_gtppl_title_custom_html|render is not empty %}
+        {{ content.field_gtppl_title_custom_html.0 }}
+      {% elseif content.field_gtppl_title_custom|render is not empty %}
+        {{ content.field_gtppl_title_custom.0 }}
+      {% else %}
+        {{ content.field_gtppl_title_official.0 }}
+      {% endif %}
+      </p>
+    </div>
+  <!--/div-->
+
+  {% if content.field_gtppl_awards|render|trim is not empty %}
+    <h3>Awards</h3>
+    {{ content.field_gtppl_awards.0 }}
+{% endif %}
+  
+  {% if content.field_gtppl_education|render is not empty %}
+    <h3>Education</h3>
+      {{ content.field_gtppl_education.0 }}
+  {% endif %}
+
+  {% if content.field_gtppl_research_history|render is not empty %}
+    <h3>Research</h3>
+      {{ content.field_gtppl_research_history.0 }}
+	  
+	  {% if content.field_gtppl_research_keywords|render is not empty %}
+        <h5>Research Keywords</h5>
+        {{ content.field_gtppl_research_keywords.0 }}
+      {% endif %}
+  {% endif %}
+
+  {% if content.field_gtppl_publications|render is not empty %}
+ 	<div class="gtppl-publications">
+      <h3>Select Publications</h3>
+      {{ content.field_gtppl_publications.0 }}
+	</div>
+  {% endif %}
+</div>
+
+</div>

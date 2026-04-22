@@ -1,17 +1,17 @@
-uuid: 4f17531c-2e83-4473-b3b4-9fbc4873f253
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_gtppl_name_last
     - node.type.gt_people
-id: node.gt_people.title
-field_name: title
+id: node.gt_people.field_gtppl_name_last
+field_name: field_gtppl_name_last
 entity_type: node
 bundle: gt_people
-label: Person
+label: 'Last Name'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

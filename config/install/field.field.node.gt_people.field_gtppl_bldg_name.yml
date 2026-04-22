@@ -1,21 +1,23 @@
-uuid: 303cfd32-4e6f-41bb-b5b3-3663be374eec
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_testing_formatted
+    - field.storage.node.field_gtppl_bldg_name
     - node.type.gt_people
   module:
     - text
-id: node.gt_people.field_testing_formatted
-field_name: field_testing_formatted
+id: node.gt_people.field_gtppl_bldg_name
+field_name: field_gtppl_bldg_name
 entity_type: node
 bundle: gt_people
-label: 'Testing formatted'
+label: 'Location - Building Name'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: ' '
+    format: gt_people_html
 default_value_callback: ''
 settings: {  }
 field_type: text

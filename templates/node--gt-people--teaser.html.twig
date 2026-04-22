@@ -1,0 +1,37 @@
+{#
+   GT People Teaser Person Template
+
+/**
+ * @file
+ *
+ * Default theme implementation for GT People profiles.
+ *
+ * Available variables:
+ * - content: Items for the content of the person.
+ *   Use 'content' to print them all, or print a subset such as
+ *   'content.title'. Use the following code to exclude the
+ *   printing of a given child element:
+ *   @code
+ *   {{ content|without('title') }}
+ *   @endcode
+ * - attributes: HTML attributes for the wrapper.
+ * - view_mode: The profile view mode used.
+ * - profile: The profile object.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{{ attach_library('gt_people/gt_people') }}
+
+{%
+  set classes = [
+  'gt_people',
+  'gt_people--' ~ gt_people.id,
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? 'gt_people--view-mode--' ~ view_mode|clean_class,
+]
+%}
+<div{{ attributes.setAttribute('id', gt_people.id).addClass(classes) }}>
+  {{ content }}
+</div>

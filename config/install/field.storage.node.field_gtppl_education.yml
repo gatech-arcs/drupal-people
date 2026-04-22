@@ -1,4 +1,3 @@
-uuid: 29f97e92-88d9-49b7-aeb5-e223ec64dfeb
 langcode: en
 status: true
 dependencies:
@@ -9,9 +8,8 @@ id: node.field_gtppl_education
 field_name: field_gtppl_education
 entity_type: node
 type: text_long
-settings:
-  max_length: 1024
-module: text
+settings: {  }
+module: text_long
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gt_people
+  module:
+    - node
+id: gt_people_editor
+label: 'GT People Editor'
+weight: 4
+is_admin: null
+permissions:
+  - 'create gt_people content'
+  - 'delete any gt_people content'
+  - 'delete gt_people revisions'
+  - 'delete own gt_people content'
+  - 'edit any gt_people content'
+  - 'edit own gt_people content'
+  - 'revert gt_people revisions'
+  - 'view gt_people revisions'

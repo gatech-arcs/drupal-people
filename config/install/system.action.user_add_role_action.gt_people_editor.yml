@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gt_people_editor
+  module:
+    - user
+id: user_add_role_action.gt_people_editor
+label: 'Add the GT People Editor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gt_people_editor
