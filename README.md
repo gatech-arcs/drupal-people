@@ -1,5 +1,7 @@
 # GT People Content Type
 
+⚠️ This branch is customized ONLY for Chemistry on upsun.
+
 ![Visibility: Intentionally Public](https://flat.badgen.net/badge/Visibility/Intentionally%20Public/f2a)
 ![Protected Data: None](https://flat.badgen.net/badge/Protected%20Data/None/f96854)
 
