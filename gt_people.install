@@ -8,14 +8,38 @@
 /**
  * Implements hook_install().
  */
+/*
 function gt_people_install() {
   \Drupal::messenger()->addStatus(__FUNCTION__);
 }
+*/
 
 /**
  * Implements hook_uninstall().
  */
+
 function gt_people_uninstall() {
   \Drupal::messenger()->addStatus(__FUNCTION__);
-}
 
+  // Delete all nodes of given content type.
+  $storage_handler = \Drupal::entityTypeManager()->getStorage('node');
+  $nodes = $storage_handler->loadByProperties(['type' => 'gt_people']);
+  $storage_handler->delete($nodes);
+
+  // Delete content type.
+  $content_type = \Drupal::entityTypeManager()
+    ->getStorage('node_type')
+    ->load('gt_people');
+  $content_type->delete();
+
+  #\Drupal::configFactory()->getEditable('system.site')->clear('remove_var_name')->save();
+
+  # Remove gt_people text format & filter
+  \Drupal::entityTypeManager()->getStorage('editor')->clear('gt_people_html')->save();
+  \Drupal::entityTypeManager()->getStorage('filter_format')->delete('gt_people_html')->save();
+  \Drupal::entityTypeManager()->getStorage('editor')->delete('gt_people_html')->save();
+
+  // Delete remaining general module variables.
+  \Drupal::state()
+    ->delete('gt_people');
+}

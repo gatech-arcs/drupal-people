@@ -4,8 +4,8 @@
     "type": "drupal-custom-module",
     "license": "GPL-2.0-or-later",
     "support": {
-        "issues": "https://github.com/gatech-arcs/drupal-people/issues",
-        "source": "https://github.com/gatech-arcs/drupal-people"
+        "issues": "https://github.com/konfuzed/gt_drupal_people/issues",
+        "source": "https://github.com/konfuzed/gt_drupal_people"
     },
     "keywords": [
         "Drupal",
@@ -13,17 +13,6 @@
         "Profiles"
     ],
     "require": {
-        "drupal/core": ">=10.4",
-
-        "drupal/address": "^2.0",
-        "drupal/geocoder": "^4.26",
-        "drupal/geofield": "^1.6",
-        "drupal/geofield_map": "11.0",
-
-        "drupal/pathauto": "^1.13",
-        "drupal/telephone": "^10",
-        "drupal/twig_tweak": "^3.4",
-
         "drupal/pathauto": "^1.9",
         "drupal/twig_tweak": "^3.1"
     }

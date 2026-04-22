@@ -13,8 +13,39 @@
 /**
  * Implements hook_field_widget_info_alter().
  */
+ /*
 function gt_people_field_widget_info_alter(array &$info) {
   $info['text_textarea']['field_types'][] = 'text';
   $info['string_textarea']['field_types'][] = 'string';
 }
+*/
 
+/*
+function gt_people_page_attachments(array &$page) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $type = $node->getType();
+
+  if ($type !== 'gt_people') {
+    return;
+  }
+
+  $settings = [
+    'nid' => $node->get('nid')->getString(),
+  ];
+  $page['#attached']['library'][] = 'gt_people/gt_people';
+  $page['#attached']['drupalSettings']['gt_people'] = $settings;
+}
+*/
+
+function gt_people_theme() {
+  return [
+    'node__gt_people__full' => [
+      'template' => 'node--gt-people--full',
+      'base hook' => 'node',
+    ],
+    'node__gt_people__teaser' => [
+      'template' => 'node--gt-people--teaser',
+      'base hook' => 'node',
+    ],
+  ];
+}

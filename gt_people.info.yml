@@ -1,9 +1,10 @@
 name: GT People
-type: custom-module
+type: module
 description: Profiles for people
 package: GT
 core_version_requirement: ^9 || ^10
 dependencies:
+  - ckeditor5
   - media
   - pathauto
   - telephone
