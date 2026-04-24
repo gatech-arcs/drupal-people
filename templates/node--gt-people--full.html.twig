@@ -162,11 +162,11 @@
       {% elseif content.field_gtppl_img_headshot|render is not empty %}
         {{ content.field_gtppl_img_headshot|render }}
       {% elseif content.field_gtppl_image|render is not empty %}
-        {{ content.field_gtppl_image.0 }}
+        {{ content.field_gtppl_image }}
       {% elseif content.field_gtppl_image_local|render is not empty %}
-        {{ content.field_gtppl_image_local.0 }}
+        {{ content.field_gtppl_image_local }}
 	   {% elseif content.field_gtppl_image_url|render is not empty %}
-        <img src="/sites/default/files/{{ content.field_gtppl_image_url.0 }}" alt="">			
+        <img src="/sites/default/files/{{ content.field_gtppl_image_url }}" alt="">			
       {% else %}
         <!-- Default Placeholder Image -->
         <img src="https://cos.gatech.edu/sites/default/files/styles/leadership_image/public/default_leadershop.jpg" alt="Placeholder Image">
