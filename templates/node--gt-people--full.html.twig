@@ -156,17 +156,16 @@
         <img src="{{ content.field_gtppl_image|file_uri|image_style('max_width_480') }}" alt="{{ content.field_gtppl_image.entity.field_media_image.alt }}">
       {% elseif content.field_gtppl_image_url|render is not empty %}
 #}
-
-      {% if content.field_gtppl_img_portrait|render is not empty %}
-        {{ content.field_gtppl_img_portrait|render }}
-      {% elseif content.field_gtppl_img_headshot|render is not empty %}
-        {{ content.field_gtppl_img_headshot|render }}
-      {% elseif content.field_gtppl_image|render is not empty %}
-        {{ content.field_gtppl_image }}
-      {% elseif content.field_gtppl_image_local|render is not empty %}
-        {{ content.field_gtppl_image_local }}
-	   {% elseif content.field_gtppl_image_url|render is not empty %}
-        <img src="/sites/default/files/{{ content.field_gtppl_image_url }}" alt="">			
+      {% if node.field_gtppl_img_portrait.entity %}
+      {{ content.field_gtppl_img_portrait }}
+      {% elseif node.field_gtppl_img_headshot.entity %}
+      {{ content.field_gtppl_img_headshot }}
+      {% elseif node.field_gtppl_image.entity %}
+        <img src="{{ file_url(node.field_gtppl_image.entity.uri.value) }}" alt="{{ node.field_gtppl_image.alt|e }}">
+      {% elseif node.field_gtppl_image_local.entity %}
+        <img src="{{ file_url(node.field_gtppl_image_local.entity.uri.value) }}" alt="{{ node.field_gtppl_image_local.alt|e }}">
+      {% elseif node.field_gtppl_image_url.value %}
+        <img src="/sites/default/files/{{ node.field_gtppl_image_url.value }}" alt="">
       {% else %}
         <!-- Default Placeholder Image -->
         <img src="https://cos.gatech.edu/sites/default/files/styles/leadership_image/public/default_leadershop.jpg" alt="Placeholder Image">
